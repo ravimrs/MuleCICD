@@ -20,28 +20,22 @@
 	<build>
 		<plugins>
 			<plugin>
-				<defaultgoal>deploy</defaultgoal>
-				<groupId>org.mule.tools.maven</groupId>
-				<artifactId>mule-maven-plugin</artifactId>
-				<version>${mule.maven.plugin.version}</version>
-				<extensions>true</extensions>
-				<configuration>
-					<cloudHubDeployment>
-					    <uri>https://anypoint.mulesoft.com</uri>
-					    <muleVersion>${mule.version}</muleVersion>
-					    <username>${anypoint.username}</username>
-					    <password>${anypoint.password}</password>
-					    <environment>${cloudhub.environment}</environment>
-					    <applicationName>${cloudhub.app}</applicationName>
-					    <businessGroup>${cloudhub.bg}</businessGroup>
-					    <workerType>${cloudhub.worker}</workerType>
-					    <objectStoreV2>true</objectStoreV2>
-					</cloudHubDeployment>
-				</configuration>
-				<executions>
+				 <groupId>org.mule.tools.maven</groupId>
+				 <artifactId>mule-maven-plugin</artifactId>
+				 <version>2.0</version>
+				 <configuration>
+					 <deploymentType>cloudhub</deploymentType>
+					 <muleVersion>4.4.0</muleVersion>
+					 <username>ravimrs</username>
+					 <password>2gitravi</password>
+					 <redeploy>true</redeploy>
+					 <environment>Sandbox</environment>
+					 <domain>${project.basedir}/domain</domain>
+				 </configuration>
+				 <executions>
 					 <execution>
 						 <goals>
-						 	<goal>deploy</goal>
+							<goal>deploy</goal>
 						 </goals>
 					 </execution>
 				 </executions>

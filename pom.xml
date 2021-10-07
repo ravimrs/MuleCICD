@@ -23,14 +23,19 @@
 				 <groupId>org.mule.tools.maven</groupId>
 				 <artifactId>mule-maven-plugin</artifactId>
 				 <version>2.0</version>
+				<extensions>true</extensions>
 				 <configuration>
+					 <cloudhubdeployment>
 					 <deploymentType>cloudhub</deploymentType>
 					 <muleVersion>4.4.0</muleVersion>
 					 <username>ravimrs</username>
 					 <password>2gitravi</password>
 					 <redeploy>true</redeploy>
 					 <environment>Sandbox</environment>
-
+					 <applicationName>MuleCICD</applicationName>
+						 <workers>1</workers>
+						 <workertype>Micro</workertype>
+					 </cloudhubdeployment>
 				 </configuration>
 				 <executions>
 					 <execution>

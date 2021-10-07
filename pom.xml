@@ -20,7 +20,7 @@
 	<build>
 		<plugins>
 			<plugin>
-				<goal>deploy</goal>
+				<defaultgoal>deploy</defaultgoal>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>

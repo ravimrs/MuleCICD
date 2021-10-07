@@ -31,7 +31,7 @@
 					 <password>2gitravi</password>
 					 <redeploy>true</redeploy>
 					 <environment>Sandbox</environment>
-					 <domain>${project.basedir}/domain</domain>
+
 				 </configuration>
 				 <executions>
 					 <execution>

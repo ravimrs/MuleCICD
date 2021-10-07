@@ -18,9 +18,9 @@
 	</properties>
 
 	<build>
-		<goal>deploy</goal>
 		<plugins>
 			<plugin>
+				<goal>deploy</goal>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>

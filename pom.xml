@@ -25,18 +25,20 @@
 				 <version>2.0</version>
 				<extensions>true</extensions>
 				 <configuration>
-					 <cloudhubdeployment>
-					 <deploymentType>cloudhub</deploymentType>
-					 <muleVersion>4.4.0</muleVersion>
-					 <username>ravimrs</username>
-					 <password>2gitravi</password>
-					 <redeploy>true</redeploy>
-					 <environment>Sandbox</environment>
-					 <applicationName>MuleCICD</applicationName>
-						 <workers>1</workers>
-						 <workertype>Micro</workertype>
-					 </cloudhubdeployment>
-				 </configuration>
+					<cloudHubDeployment>
+					<uri>https://anypoint.mulesoft.com</uri>
+					<muleVersion>{mule.version}</muleVersion>
+					<username>${anypoint.username}</username>
+					<password>${anypoint.password}</password>
+					<applicationName>${appname}</applicationName>
+					<environment>${env}</environment>
+					<workerType>${vCore}</workerType>
+					<objectStoreV2>true</objectStoreV2>
+					<businessGroup>${business}</businessGroup>
+					<workers>${workers}</workers>
+					</cloudHubDeployment>
+					<classifier>mule-application</classifier>
+				</configuration>
 				 <executions>
 					 <execution>
 						 <goals>

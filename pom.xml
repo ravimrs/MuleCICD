@@ -49,7 +49,12 @@
 			 </plugin>			
 		</plugins>
 	</build>
-
+<distributionManagement>
+    <repository>
+        <id>releases</id>
+        <url>file:///home/snapshots</url>
+    </repository>
+</distributionManagement>
 	<dependencies>
 		<dependency>
 			<groupId>org.mule.connectors</groupId>
